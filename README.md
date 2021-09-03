@@ -34,6 +34,14 @@ Installing from PyPI repository (https://pypi.org/project/cosmospy):
 pip install cosmospy
 ```
 
+Installin from the Github source code:
+```bash
+git clone https://github.com/BitCannaCommunity/cosmospy.git
+cd cosmospy
+pip3 install hdwallets bech32 mnemonic #requeriments
+```
+
+
 ## Usage<a name="usage"></a>
 
 ### Generating a wallet<a name="generating-a-wallet"></a>

@@ -28,9 +28,9 @@ class Transaction:
         sequence: int,
         fee: int,
         gas: int,
-        fee_denom: str = "uatom",
+        fee_denom: str = "ubcna",
         memo: str = "",
-        chain_id: str = "cosmoshub-4",
+        chain_id: str = "bitcanna-testnet-7",
         hrp: str = DEFAULT_BECH32_HRP,
         sync_mode: SyncMode = "sync",
     ) -> None:
@@ -46,7 +46,7 @@ class Transaction:
         self._sync_mode = sync_mode
         self._msgs: list[dict] = []
 
-    def add_transfer(self, recipient: str, amount: int, denom: str = "uatom") -> None:
+    def add_transfer(self, recipient: str, amount: int, denom: str = "ubcna") -> None:
         transfer = {
             "type": "cosmos-sdk/MsgSend",
             "value": {
